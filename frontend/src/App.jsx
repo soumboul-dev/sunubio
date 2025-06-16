@@ -30,7 +30,13 @@ const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] '>
       <WelcomeModal show={showWelcome} onClose={() => setShowWelcome(false)} />
-      <ToastContainer  />
+      <ToastContainer />
+
+      {/* Bandeau annonce */}
+      <div className="bg-green-600 text-white text-center p-2 rounded mb-4 font-semibold shadow-md">
+        🌿 Sunu Bio & Co élargit sa gamme ! Découvrez maintenant des produits bio, tech, accessoires & bien plus encore ! 🚀
+      </div>
+
       <Navbar />
       <SearchBar />
       

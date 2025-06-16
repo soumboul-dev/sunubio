@@ -17,24 +17,24 @@ const WelcomeModal = ({ show, onClose }) => {
           className="absolute top-2 right-3 text-gray-400 hover:text-gray-700 text-xl"
           aria-label="Fermer"
         >&times;</button>
-        <div className="text-3xl mb-2">🎉 Bienvenue sur <b>Sunu Bio & Co</b> ! 🌿</div>
+        <div className="text-3xl mb-2">🎉 Bienvenue sur <b>Sunu Bio & Co</b> ! 🛍️</div>
         <div className="mb-4 text-gray-700">
-          Pour profiter pleinement de nos produits bio et naturels, créez votre compte dès maintenant !
+          Découvrez une large gamme de produits : bien-être, beauté, accessoires, maison, et plus encore !
         </div>
         <div className="text-left mb-4">
-          <b>🔐 Pourquoi s’inscrire ?</b>
+          <b>🔐 Pourquoi créer un compte ?</b>
           <ul className="list-disc ml-6 mt-2 text-sm">
-            <li>Accédez à notre boutique complète</li>
+            <li>Accédez à toutes nos catégories de produits</li>
             <li>Suivez facilement vos commandes</li>
-            <li>Recevez des offres exclusives et promotions</li>
+            <li>Bénéficiez d’offres exclusives et de promotions</li>
           </ul>
         </div>
         <div className="mb-4">
           👉 <b>Inscription rapide et gratuite !</b><br />
-          Une fois inscrit(e), vous pouvez commencer vos achats en toute simplicité.
+          Créez un compte pour profiter d’une expérience d’achat fluide et personnalisée.
         </div>
         <div className="mb-2">
-          🛒 <b>Inscrivez-vous maintenant et commencez votre expérience bien-être avec Sunu Bio & Co.</b>
+          🛒 <b>Rejoignez la communauté Sunu Bio & Co maintenant !</b>
         </div>
         <button
           onClick={onClose}

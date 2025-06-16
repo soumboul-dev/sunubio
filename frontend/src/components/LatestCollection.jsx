@@ -1,25 +1,24 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react';
 import { ShopContext } from '../context/ShopContext';
 import Title from './Title';
 import ProductItem from './ProductItem';
 
 const LatestCollection = () => {
-
   const { products } = useContext(ShopContext);
   const [LatestProducts, setLatestProducts] = useState([]);
 
   useEffect(() => {
     if (products && products.length > 0) {
-      setLatestProducts(products.slice(0, 10)); // Prend les 10 premiers produits
+      setLatestProducts(products.slice(0, 10)); // Prend les 10 derniers produits ajoutés
     }
-  }, [products])
+  }, [products]);
 
   return (
     <div className='my-10'>
       <div className='text-center py-8 text-3xl'>
-        <Title text1={"NOUVEAUTÉS"} text2={"BIO"} />
+        <Title text1={"NOUVEAUTÉS"} text2={"DU MOMENT"} />
         <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-          Découvrez les dernières nouveautés bio : huiles, compléments, cosmétiques et bien-être pour une vie plus saine.
+          Découvrez nos toutes dernières nouveautés : soins, accessoires, bien-être, électronique, mode et plus encore !
         </p>
       </div>
       {/* Affichage des produits */}
@@ -35,7 +34,7 @@ const LatestCollection = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LatestCollection
+export default LatestCollection;
